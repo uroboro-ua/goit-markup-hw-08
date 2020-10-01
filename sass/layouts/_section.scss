@@ -1,0 +1,12 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__header {
+    display: block;
+    padding-bottom: 50px;
+    @include font("Roboto", 36px, normal, 700, 42px, 0.03em);
+    color: $black-heading;
+    text-align: center;
+  }
+}

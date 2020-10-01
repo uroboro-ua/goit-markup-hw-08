@@ -1,0 +1,43 @@
+.hero {
+  display: block;
+  height: 600px;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  &__overlay {
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    );
+  }
+  &__list {
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+    padding-top: 200px;
+  }
+  &__item {
+    display: block;
+  }
+  &__header {
+    margin-bottom: 30px;
+    @include font("Roboto", 44px, normal, 900, 60px, 0.06em);
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__order {
+    width: 200px;
+    height: 50px;
+    padding: 10px 31px;
+
+    &:hover {
+      background-color: #188ce8;
+    }
+  }
+}

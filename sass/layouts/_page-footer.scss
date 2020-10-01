@@ -1,0 +1,48 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $black-section;
+  color: var(--white-text-color);
+
+  &__address-container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__address-section {
+    list-style: none;
+    margin-top: 20px;
+  }
+  &__address-item {
+    padding-bottom: 9px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  &__mail-link,
+  &__phone-link {
+    color: $white-link;
+    text-decoration: none;
+  }
+  &__address {
+    @include font("Roboto", 14px, normal, 400, 24px, 0.03em);
+    color: $white;
+  }
+
+  &__social-container {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+  &__social-heading {
+    margin-bottom: 20px;
+    @include font("Roboto", 14px, normal, 700, 16px, 0.03em);
+    color: $white;
+    text-transform: uppercase;
+  }
+  &__subscribe-container {
+    display: block;
+    margin-top: 10px;
+  }
+}

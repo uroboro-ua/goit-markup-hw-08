@@ -1,0 +1,5 @@
+.logo__web {
+  @include font("Raleway", 26px, normal, 700, 31px, 0.03em);
+  color: $blue-link;
+  text-decoration: none;
+}
