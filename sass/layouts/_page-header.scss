@@ -135,7 +135,7 @@
       flex-wrap: wrap;
     }
     @include for-size(tablet) {
-      @include container(flex, flex-start, center);
+      @include container(flex, flex-start, flex-start);
       flex-direction: column;
     }
 

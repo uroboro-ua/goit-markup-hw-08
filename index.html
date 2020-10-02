@@ -168,31 +168,61 @@
           <ul class="works__list">
             <li class="works__item">
               <div class="works__container">
-                <img
-                  class="works__image"
-                  src="./images/tablet_coding.jpg"
-                  alt="Планшет на якому редагують код"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/studio/tablet_coding@1x.png 1x,
+                      ./images/desktop/studio/tablet_coding@2x.png 2x,
+                      ./images/desktop/studio/tablet_coding@3x.png 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="works__image"
+                    src="./images/desktop/studio/tablet_coding@3x.png"
+                    alt="Планшет на якому редагують код"
+                  />
+                </picture>
                 <p class="works__description">Десктопные приложения</p>
               </div>
             </li>
             <li class="works__item">
               <div class="works__container">
-                <img
-                  class="works__image"
-                  src="./images/smart_model.jpg"
-                  alt="Макет програми на дисплеї ноутбука"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/studio/smart_model@1x.png 1x,
+                      ./images/desktop/studio/smart_model@2x.png 2x,
+                      ./images/desktop/studio/smart_model@3x.png 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="works__image"
+                    src="./images/desktop/studio/smart_model@1x.png"
+                    alt="Макет програми на дисплеї ноутбука"
+                  />
+                </picture>
                 <p class="works__description">Мобильные приложения</p>
               </div>
             </li>
             <li class="works__item">
               <div class="works__container">
-                <img
-                  class="works__image"
-                  src="./images/color_schema.jpg"
-                  alt="Схема основних кольорів на планшеті"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/studio/color_schema@1x.png 1x,
+                      ./images/desktop/studio/color_schema@2x.png 2x,
+                      ./images/desktop/studio/color_schema@3x.png 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="works__image"
+                    src="./images/desktop/studio/color_schema@1x.png"
+                    alt="Схема основних кольорів на планшеті"
+                  />
+                </picture>
                 <p class="works__description">Дизайнерские решения</p>
               </div>
             </li>
@@ -206,11 +236,37 @@
           <h2 class="section__header">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__image"
-                src="images/Ihor.jpg"
-                alt="Игорь Демьяненко"
-              />
+              <picture class="team__image">
+                <source
+                  srcset="
+                    ./images/desktop/studio/ihor-desktop@1x.jpg 1x,
+                    ./images/desktop/studio/ihor-desktop@2x.jpg 2x,
+                    ./images/desktop/studio/ihor-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/ihor-tablet@1x.png 1x,
+                    ./images/tablet/studio/ihor-tablet@2x.png 2x,
+                    ./images/tablet/studio/ihor-tablet@3x.png 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/studio/ihor-mobile@1x.png 1x,
+                    ./images/mobile/studio/ihor-mobile@2x.png 2x,
+                    ./images/mobile/studio/ihor-mobile@3x.png 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/desktop/studio/ihor-desktop@1x.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <h3 class="team__fullname">Игорь Демьяненко</h3>
               <p class="team__description">Product Designer</p>
               <ul class="social__list">
@@ -247,11 +303,37 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="images/Olha.jpg"
-                alt="Ольга Репина"
-              />
+              <picture class="team__image">
+                <source
+                  srcset="
+                    ./images/desktop/studio/olha-desktop@1x.jpg 1x,
+                    ./images/desktop/studio/olha-desktop@2x.jpg 2x,
+                    ./images/desktop/studio/olha-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/olha-tablet@1x.png 1x,
+                    ./images/tablet/studio/olha-tablet@2x.png 2x,
+                    ./images/tablet/studio/olha-tablet@3x.png 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/studio/olha-mobile@1x.png 1x,
+                    ./images/mobile/studio/olha-mobile@2x.png 2x,
+                    ./images/mobile/studio/olha-mobile@3x.png 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/desktop/studio/olha-desktop@1x.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
               <h3 class="team__fullname">Ольга Репина</h3>
               <p class="team__description">Frontend Developer</p>
 
@@ -289,11 +371,37 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="images/Mykolai.jpg"
-                alt="Николай Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/studio/nikola-desktop@1x.jpg 1x,
+                    ./images/desktop/studio/nikola-desktop@2x.jpg 2x,
+                    ./images/desktop/studio/nikola-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/nikola-tablet@1x.png 1x,
+                    ./images/tablet/studio/nikola-tablet@2x.png 2x,
+                    ./images/tablet/studio/nikola-tablet@3x.png 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/studio/nikola-mobile@1x.png 1x,
+                    ./images/mobile/studio/nikola-mobile@2x.png 2x,
+                    ./images/mobile/studio/nikola-mobile@3x.png 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/desktop/studio/nikola-desktop@1x.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <h3 class="team__fullname">Николай Тарасов</h3>
               <p class="team__description">Marketing</p>
               <ul class="social__list">
@@ -331,11 +439,37 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__image"
-                src="images/Ivan.jpg"
-                alt="Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/studio/michail-desktop@1x.jpg 1x,
+                    ./images/desktop/studio/michail-desktop@2x.jpg 2x,
+                    ./images/desktop/studio/michail-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/michail-tablet@1x.png 1x,
+                    ./images/tablet/studio/michail-tablet@2x.png 2x,
+                    ./images/tablet/studio/michail-tablet@3x.png 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/studio/michail-mobile@1x.png 1x,
+                    ./images/mobile/studio/michail-mobile@2x.png 2x,
+                    ./images/mobile/studio/michail-mobile@3x.png 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/desktop/studio/michail-desktop@1x.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <h3 class="team__fullname">Иван Николаев</h3>
               <p class="team__description">UI Designer</p>
               <ul class="social__list">
