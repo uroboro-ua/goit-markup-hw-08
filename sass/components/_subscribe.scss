@@ -1,27 +1,62 @@
 .subscribe {
-  display: flex;
-  justify-content: flex-start;
+  @include container(flex, flex-start, flex-start);
+  flex-wrap: wrap;
   margin-bottom: 20px;
   @include font("Roboto", 14px, normal, 700, 16px, 0.03em);
   color: $white;
   text-transform: uppercase;
 
   &__form {
-    display: flex;
+    @include for-size(mobile) {
+      width: 100%;
+      @include container(flex, center, center);
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    @include for-size(tablet) {
+      @include container(flex, center, center);
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    @include for-size(desktop) {
+      @include container(flex, flex-start, flex-start);
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
   }
   &__textbox {
-    width: 356px;
     height: 50px;
-    margin-right: 12px;
     padding-left: 16px;
     border: 1px solid $white-link;
     border-radius: 4px;
-    box-sizing: border-box;
     background-color: $black-section;
     filter: drop-shadow(0px 4px 4px $black-background);
+    @include for-size(mobile) {
+      width: 100%;
+      margin-right: 0;
+    }
+    @include for-size(tablet) {
+      width: 356px;
+      margin-right: 0;
+    }
+    @include for-size(desktop) {
+      width: 356px;
+      margin-right: 12px;
+    }
   }
 
   &__button {
+    @include for-size(mobile) {
+      margin-top: 20px;
+    }
+    @include for-size(tablet) {
+      margin-top: 20px;
+    }
+    @include for-size(desktop) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
     width: 200px;
     height: 50px;
     padding: 10px 29px;

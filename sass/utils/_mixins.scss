@@ -7,8 +7,8 @@
   letter-spacing: $ls;
 }
 
-@mixin flexbox($jc: flex-start, $ai: stretch) {
-  display: flex;
+@mixin container($df, $jc, $ai) {
+  display: $df;
   justify-content: $jc;
   align-items: $ai;
 }
@@ -19,15 +19,15 @@
   $desktop: 1280px;
 
   @if $range == mobile-only {
-    @media (max-width: #{$mobile - 1}) {
+    @media (max-width: #{$mobile}) {
       @content;
     }
   } @else if $range == mobile {
-    @media (min-width: $mobile) {
+    @media (min-width: $mobile) and (max-width: $tablet - 1) {
       @content;
     }
   } @else if $range == tablet {
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet) and (max-width: $desktop - 1) {
       @content;
     }
   } @else if $range == desktop {

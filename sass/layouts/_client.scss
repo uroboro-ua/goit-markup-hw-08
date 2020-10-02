@@ -1,25 +1,61 @@
 .client {
   &__list {
-    display: flex;
+    @include container(flex, center, center);
     flex-wrap: wrap;
     list-style: none;
   }
   &__item {
-    width: calc((100% - 30px * 5) / 6);
-    margin-right: 30px;
+    @include for-size(mobile) {
+      width: calc((100% - 30px * 1) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
 
-    &:nth-child(6n) {
-      margin-right: 0;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(n + 5) {
+        margin-bottom: 0;
+      }
+    }
+    @include for-size(tablet) {
+      width: calc((100% - 30px * 2) / 3);
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(n + 4) {
+        margin-bottom: 0;
+      }
+    }
+    @include for-size(desktop) {
+      width: calc((100% - 30px * 5) / 6);
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
   &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
+    @include container(flex, center, center);
+
     height: 90px;
     border: 1px solid $grey-icon;
     border-radius: 4px;
+
+    @include for-size(mobile) {
+      width: 210px;
+    }
+    @include for-size(tablet) {
+      width: 226px;
+    }
+    @include for-size(desktop) {
+      width: 170px;
+    }
 
     &:hover {
       border: 1px solid $blue-link;

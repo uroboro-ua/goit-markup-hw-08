@@ -1,35 +1,61 @@
 .advantage {
-  margin-top: 94px;
-  margin-bottom: 94px;
-
   &__header {
     display: none;
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
+    @include container(flex, center, center);
+    flex-wrap: wrap;
   }
 
   &__item {
-    width: calc((100% - 30px * 3) / 4);
-    margin-right: 30px;
+    @include for-size(mobile) {
+      width: 100%;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @include for-size(tablet) {
+      width: calc((100% - 30px * 1) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
 
-    &:nth-child(4n) {
-      margin-right: 0;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(n + 3) {
+        margin-bottom: 0;
+      }
+    }
+    @include for-size(desktop) {
+      width: calc((100% - 30px * 3) / 4);
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 
   &__container-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 270px;
+    @include container(flex, center, center);
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: $white-button;
+
+    @include for-size(mobile) {
+      width: 450px;
+    }
+    @include for-size(tablet) {
+      width: 354px;
+    }
+    @include for-size(desktop) {
+      width: 270px;
+    }
   }
 
   &__icon {

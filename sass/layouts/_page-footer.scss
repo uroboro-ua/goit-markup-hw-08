@@ -1,19 +1,86 @@
 .page-footer {
+  flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $black-section;
   color: var(--white-text-color);
 
+  &__list {
+    list-style: none;
+
+    @include for-size(mobile) {
+      @include container(flex, center, center);
+      flex-wrap: wrap;
+    }
+    @include for-size(tablet) {
+      @include container(flex, center, center);
+      flex-wrap: wrap;
+    }
+    @include for-size(desktop) {
+      @include container(flex, flex-start, center);
+    }
+  }
+
+  &__item {
+    @include for-size(mobile) {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @include for-size(tablet) {
+      margin-right: 165px;
+      margin-bottom: 60px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(n + 3) {
+        margin: 0 auto;
+      }
+    }
+    @include for-size(desktop) {
+    }
+  }
+
   &__address-container {
     display: flex;
     flex-direction: column;
+    @include for-size(mobile) {
+      @include container(flex, center, center);
+    }
+    @include for-size(tablet) {
+      @include container(flex, center, center);
+    }
+    @include for-size(desktop) {
+      @include container(flex, flex-start, flex-start);
+      margin-right: 70px;
+    }
   }
   &__address-section {
     list-style: none;
+
     margin-top: 20px;
+    @include for-size(mobile) {
+      width: 232px;
+    }
+    @include for-size(tablet) {
+      width: 232px;
+    }
+    @include for-size(desktop) {
+      width: 231px;
+    }
   }
-  &__address-item {
+  &__address-item,
+  .contact__link {
     padding-bottom: 9px;
+
+    @include for-size(tablet) {
+      @include font("Roboto", 14px, normal, 500, 16px, 0.02em);
+    }
 
     &:last-child {
       padding-bottom: 0;
@@ -27,13 +94,32 @@
   &__address {
     @include font("Roboto", 14px, normal, 400, 24px, 0.03em);
     color: $white;
+
+    @include for-size(mobile) {
+      text-align: center;
+    }
+    @include for-size(tablet) {
+      text-align: center;
+    }
+    @include for-size(desktop) {
+      text-align: left;
+    }
   }
 
   &__social-container {
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 70px;
-    margin-right: 93px;
+    flex-direction: column;
+    @include for-size(mobile) {
+      @include container(flex, center, center);
+    }
+    @include for-size(tablet) {
+      @include container(flex, center, center);
+      margin-top: 10px;
+    }
+    @include for-size(desktop) {
+      @include container(flex, flex-start, flex-start);
+      margin-top: 10px;
+      margin-right: 93px;
+    }
   }
   &__social-heading {
     margin-bottom: 20px;
@@ -41,8 +127,20 @@
     color: $white;
     text-transform: uppercase;
   }
+
   &__subscribe-container {
-    display: block;
-    margin-top: 10px;
+    @include for-size(mobile) {
+      @include container(flex, center, center);
+      flex-direction: column;
+    }
+    @include for-size(tablet) {
+      @include container(flex, center, center);
+      flex-direction: column;
+    }
+    @include for-size(desktop) {
+      @include container(flex, flex-start, flex-start);
+      flex-direction: column;
+      margin-top: 10px;
+    }
   }
 }
