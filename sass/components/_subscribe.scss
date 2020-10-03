@@ -7,17 +7,11 @@
   text-transform: uppercase;
 
   &__form {
-    @include for-size(mobile) {
-      width: 100%;
-      @include container(flex, center, center);
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    @include for-size(tablet) {
-      @include container(flex, center, center);
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
+    @include container(flex, center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
     @include for-size(desktop) {
       @include container(flex, flex-start, flex-start);
       flex-direction: row;
@@ -31,13 +25,11 @@
     border-radius: 4px;
     background-color: $black-section;
     filter: drop-shadow(0px 4px 4px $black-background);
-    @include for-size(mobile) {
-      width: 100%;
-      margin-right: 0;
-    }
+    color: $white;
+    margin-right: 0;
+    width: 100%;
     @include for-size(tablet) {
       width: 356px;
-      margin-right: 0;
     }
     @include for-size(desktop) {
       width: 356px;
@@ -46,13 +38,9 @@
   }
 
   &__button {
-    @include for-size(mobile) {
-      margin-top: 20px;
-    }
-    @include for-size(tablet) {
-      margin-top: 20px;
-    }
+    margin-top: 20px;
     @include for-size(desktop) {
+      margin-top: 0;
       flex-direction: row;
       flex-wrap: nowrap;
     }

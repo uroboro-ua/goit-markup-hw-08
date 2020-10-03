@@ -1,13 +1,9 @@
 .contact__link {
   text-decoration: none;
-
-  @include for-size(mobile) {
-    @include container(flex, center, center);
-  }
+  @include container(flex, center, center);
 
   @include for-size(tablet) {
     @include font("Roboto", 12px, normal, 500, 14px, 0.02em);
-    @include container(flex, center, center);
   }
 
   @include for-size(desktop) {

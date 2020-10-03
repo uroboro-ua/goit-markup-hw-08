@@ -1,10 +1,9 @@
 .page-header {
   @include container(flex, flex-start, center);
-  @include for-size(mobile) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 60px;
-  }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 60px;
+
   @include for-size(tablet) {
     padding-top: 21px;
     padding-bottom: 21px;
@@ -19,31 +18,31 @@
 
   &__logo-container {
     @include container(flex, center, center);
-    @include for-size(mobile) {
-      margin-right: auto;
-    }
+    margin-right: auto;
 
     @include for-size(tablet) {
       margin-right: 48px;
     }
-
     @include for-size(desktop) {
       margin-right: 53px;
     }
   }
 
   &__navigation {
-    @include for-size(mobile) {
-      @include container(flex, center, center);
-      flex-direction: column;
-      margin-bottom: 60px;
-    }
+    @include container(flex, center, center);
+    flex-direction: column;
+    margin-bottom: 60px;
+
     @include for-size(tablet) {
       @include container(flex, flex-start, center);
+      flex-direction: row;
+      margin-bottom: 0;
       margin-right: 84px;
     }
     @include for-size(desktop) {
       @include container(flex, flex-start, center);
+      flex-direction: row;
+      margin-bottom: 0;
       margin-right: 259px;
     }
   }
@@ -51,9 +50,8 @@
   &__list {
     list-style: none;
     @include container(flex, center, center);
-    @include for-size(mobile) {
-      flex-direction: column;
-    }
+    flex-direction: column;
+
     @include for-size(tablet) {
       flex-direction: row;
     }
@@ -64,18 +62,19 @@
 
   &__item {
     color: $black-heading;
-    @include for-size(mobile) {
-      &:not(:last-child) {
-        margin-bottom: 40px;
-      }
+    &:not(:last-child) {
+      margin-bottom: 40px;
     }
+
     @include for-size(tablet) {
       &:not(:last-child) {
+        margin-bottom: 0;
         margin-right: 50px;
       }
     }
     @include for-size(desktop) {
       &:not(:last-child) {
+        margin-bottom: 0;
         margin-right: 50px;
       }
     }
@@ -102,10 +101,8 @@
       color: $blue-link;
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       opacity: 0;
+      padding-bottom: 12px;
 
-      @include for-size(mobile) {
-        padding-bottom: 12px;
-      }
       @include for-size(tablet) {
         padding-bottom: 30px;
       }
@@ -129,26 +126,26 @@
 
   &__contact-list {
     list-style: none;
-    @include for-size(mobile) {
-      @include container(flex, center, center);
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
+    @include container(flex, center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+
     @include for-size(tablet) {
       @include container(flex, flex-start, flex-start);
-      flex-direction: column;
+      flex-wrap: nowrap;
     }
 
     @include for-size(desktop) {
       @include container(flex, flex-start, center);
       flex-direction: row;
+      flex-wrap: nowrap;
     }
   }
   &__contact-item {
-    @include for-size(mobile) {
+    @include for-size(mobile-plus) {
       &:not(:last-child) {
         width: 100%;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
       }
     }
     @include for-size(tablet) {

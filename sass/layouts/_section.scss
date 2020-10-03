@@ -1,12 +1,6 @@
 .section {
-  @include for-size(mobile) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @include for-size(tablet) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
   @include for-size(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -16,15 +10,9 @@
     display: block;
     color: $black-heading;
     text-align: center;
+    padding-bottom: 30px;
+    @include font("Roboto", 28px, normal, 700, 33px, 0.03em);
 
-    @include for-size(mobile) {
-      padding-bottom: 30px;
-      @include font("Roboto", 28px, normal, 700, 33px, 0.03em);
-    }
-    @include for-size(tablet) {
-      padding-bottom: 30px;
-      @include font("Roboto", 28px, normal, 700, 33px, 0.03em);
-    }
     @include for-size(desktop) {
       padding-bottom: 50px;
       @include font("Roboto", 36px, normal, 700, 42px, 0.03em);

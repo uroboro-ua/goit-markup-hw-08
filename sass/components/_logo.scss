@@ -1,16 +1,15 @@
 .logo__web {
   color: $blue-link;
   text-decoration: none;
+  text-align: center;
+  @include font("Raleway", 24px, normal, 700, 28px, 0.03em);
 
-  @include for-size(mobile) {
-    text-align: center;
-    @include font("Raleway", 24px, normal, 700, 28px, 0.03em);
-  }
-  @include for-size(tablet) {
-    text-align: center;
-    @include font("Raleway", 24px, normal, 700, 28px, 0.03em);
+  @include for-size(mobile-only) {
+    text-align: left;
+    @include font("Raleway", 20px, normal, 700, 22px, 0.03em);
   }
   @include for-size(desktop) {
+    text-align: left;
     @include font("Raleway", 26px, normal, 700, 31px, 0.03em);
   }
 }
