@@ -1,5 +1,4 @@
 .hero {
-  @include container(flex, center, center);
   height: 400px;
 
   background-repeat: no-repeat;
@@ -52,7 +51,8 @@
     height: 50px;
     padding: 10px 31px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #188ce8;
     }
   }

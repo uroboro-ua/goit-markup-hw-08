@@ -44,27 +44,12 @@
 
   &__container-icon {
     @include container(flex, center, center);
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
 
     background-color: $white-button;
-
-    @include for-size(mobile-only) {
-      width: 100%;
-    }
-
-    @include for-size(mobile) {
-      width: 450px;
-    }
-
-    @include for-size(tablet) {
-      width: 354px;
-    }
-
-    @include for-size(desktop) {
-      width: 270px;
-    }
   }
 
   &__icon {
