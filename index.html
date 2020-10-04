@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -15,41 +12,22 @@
     <header class="page-header">
       <div class="container flex">
         <div class="page-header__logo-container">
-          <a class="logo__web" href="./index.html"
-            >Web<span class="logo__light-studio">Studio</span></a
-          >
+          <a class="logo__web" href="./index.html">Web<span class="logo__light-studio">Studio</span></a>
         </div>
-        <button
-          type="button"
-          class="menu__button is-open"
-          aria-expanded="false"
-          data-menu-button
-        >
+        <button type="button" class="menu__button is-open" aria-expanded="false" data-menu-button>
           <svg class="menu__icons" aria-label="перемикач мобільного меню">
-            <use
-              class="menu__icon-menu"
-              href="./images/icons/burger.svg#icon-menu"
-            ></use>
-            <use
-              class="menu__icon-cross"
-              href="./images/icons/burger.svg#icon-close"
-            ></use>
+            <use class="menu__icon-menu" href="./images/icons/burger.svg#icon-menu"></use>
+            <use class="menu__icon-cross" href="./images/icons/burger.svg#icon-close"></use>
           </svg>
         </button>
         <div role="menu" class="menu is-open" aria-expanded="false" data-menu>
           <nav class="page-header__navigation">
             <ul class="page-header__list">
               <li class="page-header__item">
-                <a
-                  class="page-header__link page-header__actual-link"
-                  href="./index.html"
-                  >Студия</a
-                >
+                <a class="page-header__link page-header__actual-link" href="./index.html">Студия</a>
               </li>
               <li class="page-header__item">
-                <a class="page-header__link" href="./portfolio.html"
-                  >Портфолио</a
-                >
+                <a class="page-header__link" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="page-header__item">
                 <a class="page-header__link" href="">Контакти</a>
@@ -58,10 +36,7 @@
           </nav>
           <ul class="page-header__contact-list">
             <li class="page-header__contact-item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="dark__link contact__link"
-              >
+              <a href="mailto:info@devstudio.com" class="dark__link contact__link">
                 <svg class="page-header__icon page-header__mail-icon">
                   <use href="./images/icons/sprite.svg#mail-icon"></use>
                 </svg>
@@ -84,21 +59,11 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="container hero__overlay">
-          <ul class="hero__list">
-            <li class="hero__item">
-              <h1 class="hero__header">
-                Эффективные решения <br />
-                для вашего бизнеса
-              </h1>
-            </li>
-            <li class="hero__item">
-              <button data-modal-open class="button hero__order" type="button">
-                Заказать услугу
-              </button>
-            </li>
-          </ul>
-        </div>
+        <h1 class="hero__header">
+          Эффективные решения <br />
+          для вашего бизнеса
+        </h1>
+        <button data-modal-open class="button hero__order" type="button">Заказать услугу</button>
       </section>
 
       <!-- Advantages -->
@@ -113,10 +78,7 @@
                 </svg>
               </div>
               <h3 class="advantage__heading">Внимание к деталям</h3>
-              <p class="advantage__description">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
+              <p class="advantage__description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
 
             <li class="advantage__item">
@@ -126,10 +88,7 @@
                 </svg>
               </div>
               <h3 class="advantage__heading">Пунктуальность</h3>
-              <p class="advantage__description">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
+              <p class="advantage__description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
 
             <li class="advantage__item">
@@ -139,10 +98,7 @@
                 </svg>
               </div>
               <h3 class="advantage__heading">Планирование</h3>
-              <p class="advantage__description">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
+              <p class="advantage__description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
 
             <li class="advantage__item">
@@ -152,10 +108,7 @@
                 </svg>
               </div>
               <h3 class="advantage__heading">Современные технологии</h3>
-              <p class="advantage__description">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
+              <p class="advantage__description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
@@ -169,19 +122,8 @@
             <li class="works__item">
               <div class="works__container">
                 <picture>
-                  <source
-                    srcset="
-                      ./images/desktop/studio/tablet_coding@1x.png 1x,
-                      ./images/desktop/studio/tablet_coding@2x.png 2x,
-                      ./images/desktop/studio/tablet_coding@3x.png 3x
-                    "
-                    media="(min-width: 1200px)"
-                  />
-                  <img
-                    class="works__image"
-                    src="./images/desktop/studio/tablet_coding@3x.png"
-                    alt="Планшет на якому редагують код"
-                  />
+                  <source srcset="./images/desktop/studio/tablet_coding@1x.png 1x, ./images/desktop/studio/tablet_coding@2x.png 2x, ./images/desktop/studio/tablet_coding@3x.png 3x" media="(min-width: 1200px)" />
+                  <img class="works__image" src="./images/desktop/studio/tablet_coding@3x.png" alt="Планшет на якому редагують код" />
                 </picture>
                 <p class="works__description">Десктопные приложения</p>
               </div>
@@ -189,19 +131,8 @@
             <li class="works__item">
               <div class="works__container">
                 <picture>
-                  <source
-                    srcset="
-                      ./images/desktop/studio/smart_model@1x.png 1x,
-                      ./images/desktop/studio/smart_model@2x.png 2x,
-                      ./images/desktop/studio/smart_model@3x.png 3x
-                    "
-                    media="(min-width: 1200px)"
-                  />
-                  <img
-                    class="works__image"
-                    src="./images/desktop/studio/smart_model@1x.png"
-                    alt="Макет програми на дисплеї ноутбука"
-                  />
+                  <source srcset="./images/desktop/studio/smart_model@1x.png 1x, ./images/desktop/studio/smart_model@2x.png 2x, ./images/desktop/studio/smart_model@3x.png 3x" media="(min-width: 1200px)" />
+                  <img class="works__image" src="./images/desktop/studio/smart_model@1x.png" alt="Макет програми на дисплеї ноутбука" />
                 </picture>
                 <p class="works__description">Мобильные приложения</p>
               </div>
@@ -209,19 +140,8 @@
             <li class="works__item">
               <div class="works__container">
                 <picture>
-                  <source
-                    srcset="
-                      ./images/desktop/studio/color_schema@1x.png 1x,
-                      ./images/desktop/studio/color_schema@2x.png 2x,
-                      ./images/desktop/studio/color_schema@3x.png 3x
-                    "
-                    media="(min-width: 1200px)"
-                  />
-                  <img
-                    class="works__image"
-                    src="./images/desktop/studio/color_schema@1x.png"
-                    alt="Схема основних кольорів на планшеті"
-                  />
+                  <source srcset="./images/desktop/studio/color_schema@1x.png 1x, ./images/desktop/studio/color_schema@2x.png 2x, ./images/desktop/studio/color_schema@3x.png 3x" media="(min-width: 1200px)" />
+                  <img class="works__image" src="./images/desktop/studio/color_schema@1x.png" alt="Схема основних кольорів на планшеті" />
                 </picture>
                 <p class="works__description">Дизайнерские решения</p>
               </div>
@@ -237,35 +157,10 @@
           <ul class="team__list">
             <li class="team__item">
               <picture>
-                <source
-                  srcset="
-                    ./images/desktop/studio/ihor-desktop@1x.jpg 1x,
-                    ./images/desktop/studio/ihor-desktop@2x.jpg 2x,
-                    ./images/desktop/studio/ihor-desktop@3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/tablet/studio/ihor-tablet@1x.png 1x,
-                    ./images/tablet/studio/ihor-tablet@2x.png 2x,
-                    ./images/tablet/studio/ihor-tablet@3x.png 3x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/mobile/studio/ihor-mobile@1x.png 1x,
-                    ./images/mobile/studio/ihor-mobile@2x.png 2x,
-                    ./images/mobile/studio/ihor-mobile@3x.png 3x
-                  "
-                  media="(max-width: 767px)"
-                />
-                <img
-                  class="team__image"
-                  src="./images/desktop/studio/ihor-desktop@1x.jpg"
-                  alt="Игорь Демьяненко"
-                />
+                <source srcset="./images/desktop/studio/ihor-desktop@1x.jpg 1x, ./images/desktop/studio/ihor-desktop@2x.jpg 2x, ./images/desktop/studio/ihor-desktop@3x.jpg 3x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/studio/ihor-tablet@1x.png 1x, ./images/tablet/studio/ihor-tablet@2x.png 2x, ./images/tablet/studio/ihor-tablet@3x.png 3x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/studio/ihor-mobile@1x.png 1x, ./images/mobile/studio/ihor-mobile@2x.png 2x, ./images/mobile/studio/ihor-mobile@3x.png 3x" media="(max-width: 767px)" />
+                <img class="team__image" src="./images/desktop/studio/ihor-desktop@1x.jpg" alt="Игорь Демьяненко" />
               </picture>
               <h3 class="team__fullname">Игорь Демьяненко</h3>
               <p class="team__description">Product Designer</p>
@@ -273,9 +168,7 @@
                 <li class="social__item">
                   <a href="#" class="social__link">
                     <svg class="social__icon team__social-icon">
-                      <use
-                        href="./images/icons/sprite.svg#instagram-icon"
-                      ></use>
+                      <use href="./images/icons/sprite.svg#instagram-icon"></use>
                     </svg>
                   </a>
                 </li>
@@ -304,35 +197,10 @@
             </li>
             <li class="team__item">
               <picture>
-                <source
-                  srcset="
-                    ./images/desktop/studio/olha-desktop@1x.jpg 1x,
-                    ./images/desktop/studio/olha-desktop@2x.jpg 2x,
-                    ./images/desktop/studio/olha-desktop@3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/tablet/studio/olha-tablet@1x.png 1x,
-                    ./images/tablet/studio/olha-tablet@2x.png 2x,
-                    ./images/tablet/studio/olha-tablet@3x.png 3x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/mobile/studio/olha-mobile@1x.png 1x,
-                    ./images/mobile/studio/olha-mobile@2x.png 2x,
-                    ./images/mobile/studio/olha-mobile@3x.png 3x
-                  "
-                  media="(max-width: 767px)"
-                />
-                <img
-                  class="team__image"
-                  src="./images/desktop/studio/olha-desktop@1x.jpg"
-                  alt="Ольга Репина"
-                />
+                <source srcset="./images/desktop/studio/olha-desktop@1x.jpg 1x, ./images/desktop/studio/olha-desktop@2x.jpg 2x, ./images/desktop/studio/olha-desktop@3x.jpg 3x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/studio/olha-tablet@1x.png 1x, ./images/tablet/studio/olha-tablet@2x.png 2x, ./images/tablet/studio/olha-tablet@3x.png 3x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/studio/olha-mobile@1x.png 1x, ./images/mobile/studio/olha-mobile@2x.png 2x, ./images/mobile/studio/olha-mobile@3x.png 3x" media="(max-width: 767px)" />
+                <img class="team__image" src="./images/desktop/studio/olha-desktop@1x.jpg" alt="Ольга Репина" />
               </picture>
               <h3 class="team__fullname">Ольга Репина</h3>
               <p class="team__description">Frontend Developer</p>
@@ -341,9 +209,7 @@
                 <li class="social__item">
                   <a href="#" class="social__link">
                     <svg class="social__icon team__social-icon">
-                      <use
-                        href="./images/icons/sprite.svg#instagram-icon"
-                      ></use>
+                      <use href="./images/icons/sprite.svg#instagram-icon"></use>
                     </svg>
                   </a>
                 </li>
@@ -372,35 +238,10 @@
             </li>
             <li class="team__item">
               <picture>
-                <source
-                  srcset="
-                    ./images/desktop/studio/nikola-desktop@1x.jpg 1x,
-                    ./images/desktop/studio/nikola-desktop@2x.jpg 2x,
-                    ./images/desktop/studio/nikola-desktop@3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/tablet/studio/nikola-tablet@1x.png 1x,
-                    ./images/tablet/studio/nikola-tablet@2x.png 2x,
-                    ./images/tablet/studio/nikola-tablet@3x.png 3x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/mobile/studio/nikola-mobile@1x.png 1x,
-                    ./images/mobile/studio/nikola-mobile@2x.png 2x,
-                    ./images/mobile/studio/nikola-mobile@3x.png 3x
-                  "
-                  media="(max-width: 767px)"
-                />
-                <img
-                  class="team__image"
-                  src="./images/desktop/studio/nikola-desktop@1x.jpg"
-                  alt="Николай Тарасов"
-                />
+                <source srcset="./images/desktop/studio/nikola-desktop@1x.jpg 1x, ./images/desktop/studio/nikola-desktop@2x.jpg 2x, ./images/desktop/studio/nikola-desktop@3x.jpg 3x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/studio/nikola-tablet@1x.png 1x, ./images/tablet/studio/nikola-tablet@2x.png 2x, ./images/tablet/studio/nikola-tablet@3x.png 3x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/studio/nikola-mobile@1x.png 1x, ./images/mobile/studio/nikola-mobile@2x.png 2x, ./images/mobile/studio/nikola-mobile@3x.png 3x" media="(max-width: 767px)" />
+                <img class="team__image" src="./images/desktop/studio/nikola-desktop@1x.jpg" alt="Николай Тарасов" />
               </picture>
               <h3 class="team__fullname">Николай Тарасов</h3>
               <p class="team__description">Marketing</p>
@@ -408,9 +249,7 @@
                 <li class="social__item">
                   <a href="#" class="social__link">
                     <svg class="social__icon team__social-icon">
-                      <use
-                        href="./images/icons/sprite.svg#instagram-icon"
-                      ></use>
+                      <use href="./images/icons/sprite.svg#instagram-icon"></use>
                     </svg>
                   </a>
                 </li>
@@ -440,35 +279,10 @@
 
             <li class="team__item">
               <picture>
-                <source
-                  srcset="
-                    ./images/desktop/studio/michail-desktop@1x.jpg 1x,
-                    ./images/desktop/studio/michail-desktop@2x.jpg 2x,
-                    ./images/desktop/studio/michail-desktop@3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/tablet/studio/michail-tablet@1x.png 1x,
-                    ./images/tablet/studio/michail-tablet@2x.png 2x,
-                    ./images/tablet/studio/michail-tablet@3x.png 3x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/mobile/studio/michail-mobile@1x.png 1x,
-                    ./images/mobile/studio/michail-mobile@2x.png 2x,
-                    ./images/mobile/studio/michail-mobile@3x.png 3x
-                  "
-                  media="(max-width: 767px)"
-                />
-                <img
-                  class="team__image"
-                  src="./images/desktop/studio/michail-desktop@1x.jpg"
-                  alt="Михаил Ермаков"
-                />
+                <source srcset="./images/desktop/studio/michail-desktop@1x.jpg 1x, ./images/desktop/studio/michail-desktop@2x.jpg 2x, ./images/desktop/studio/michail-desktop@3x.jpg 3x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/studio/michail-tablet@1x.png 1x, ./images/tablet/studio/michail-tablet@2x.png 2x, ./images/tablet/studio/michail-tablet@3x.png 3x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/studio/michail-mobile@1x.png 1x, ./images/mobile/studio/michail-mobile@2x.png 2x, ./images/mobile/studio/michail-mobile@3x.png 3x" media="(max-width: 767px)" />
+                <img class="team__image" src="./images/desktop/studio/michail-desktop@1x.jpg" alt="Михаил Ермаков" />
               </picture>
               <h3 class="team__fullname">Иван Николаев</h3>
               <p class="team__description">UI Designer</p>
@@ -476,9 +290,7 @@
                 <li class="social__item">
                   <a href="#" class="social__link">
                     <svg class="social__icon team__social-icon">
-                      <use
-                        href="./images/icons/sprite.svg#instagram-icon"
-                      ></use>
+                      <use href="./images/icons/sprite.svg#instagram-icon"></use>
                     </svg>
                   </a>
                 </li>
@@ -566,26 +378,16 @@
         <ul class="page-footer__list">
           <li class="page-footer__item">
             <div class="page-footer__address-container">
-              <a class="logo__web" href="./index.html"
-                >Web<span class="logo__dark-studio">Studio</span></a
-              >
+              <a class="logo__web" href="./index.html">Web<span class="logo__dark-studio">Studio</span></a>
               <ul class="page-footer__address-section">
                 <li class="page-footer__address-item">
-                  <p class="page-footer__address">
-                    г. Киев, пр-т Леси Украинки, 26
-                  </p>
+                  <p class="page-footer__address">г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
                 <li class="page-footer__address-item">
-                  <a
-                    class="light__link contact__link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                  <a class="light__link contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="page-footer__address-item">
-                  <a class="light__link contact__link" href="tel:380961111111"
-                    >+380 96 111 11 11</a
-                  >
+                  <a class="light__link contact__link" href="tel:380961111111">+380 96 111 11 11</a>
                 </li>
               </ul>
             </div>
@@ -597,9 +399,7 @@
                 <li class="social__item">
                   <a href="#" class="social__link page-footer__social-link">
                     <svg class="social__icon page-footer__social-icon">
-                      <use
-                        href="./images/icons/sprite.svg#instagram-icon"
-                      ></use>
+                      <use href="./images/icons/sprite.svg#instagram-icon"></use>
                     </svg>
                   </a>
                 </li>
@@ -632,13 +432,7 @@
               <b class="subscribe">Подпишитесь на рассылку</b>
 
               <form class="subscribe__form">
-                <input
-                  class="subscribe__textbox"
-                  type="email"
-                  name="e-mail"
-                  id="e-mail"
-                  placeholder="E-mail"
-                />
+                <input class="subscribe__textbox" type="email" name="e-mail" id="e-mail" placeholder="E-mail" />
                 <button class="button subscribe__button" type="submit">
                   Подписаться
                   <svg class="subscribe__icon" width="24" height="24">
@@ -656,28 +450,17 @@
       <div class="backdrop__modal">
         <div>
           <div class="backdrop__close">
-            <button
-              type="button"
-              data-modal-close
-              class="button backdrop__close-button"
-            >
+            <button type="button" data-modal-close class="button backdrop__close-button">
               <svg class="backdrop__close-svg">
                 <use href="./images/icons/sprite-modal.svg#close-icon"></use>
               </svg>
             </button>
           </div>
-          <h2 class="backdrop__form-title">
-            Оставьте свои данные, мы вам перезвоним
-          </h2>
+          <h2 class="backdrop__form-title">Оставьте свои данные, мы вам перезвоним</h2>
           <form class="backdrop__form" autocomplete="off">
             <label class="backdrop__form-label" for="name">Имя</label>
             <div class="backdrop__form-list">
-              <input
-                class="backdrop__form-text"
-                type="text"
-                id="name"
-                name="name"
-              />
+              <input class="backdrop__form-text" type="text" id="name" name="name" />
               <div class="backdrop__container-svg">
                 <svg class="backdrop__svg" width="12" height="12">
                   <use href="./images/icons/sprite-modal.svg#name-icon"></use>
@@ -687,12 +470,7 @@
 
             <label class="backdrop__form-label" for="tel">Телефон</label>
             <div class="backdrop__form-list">
-              <input
-                class="backdrop__form-text"
-                type="text"
-                id="tel"
-                name="tel"
-              />
+              <input class="backdrop__form-text" type="text" id="tel" name="tel" />
               <div class="backdrop__container-svg">
                 <svg class="backdrop__svg" width="13" height="13">
                   <use href="./images/icons/sprite-modal.svg#phone-icon"></use>
@@ -701,12 +479,7 @@
             </div>
             <label class="backdrop__form-label" for="mail">Почта</label>
             <div class="backdrop__form-list">
-              <input
-                class="backdrop__form-text"
-                type="text"
-                id="mail"
-                name="mail"
-              />
+              <input class="backdrop__form-text" type="text" id="mail" name="mail" />
               <div class="backdrop__container-svg">
                 <svg class="backdrop__svg" width="15" height="12">
                   <use href="./images/icons/sprite-modal.svg#mail-icon"></use>
@@ -714,20 +487,9 @@
               </div>
             </div>
             <label for="comment" class="backdrop__form-label">Коментарий</label>
-            <textarea
-              placeholder="Введите текст"
-              class="backdrop__textarea"
-              name="comment"
-              id="comment"
-              rows="10"
-            ></textarea>
+            <textarea placeholder="Введите текст" class="backdrop__textarea" name="comment" id="comment" rows="10"></textarea>
             <div class="backdrop__container-checkbox">
-              <input
-                class="backdrop__form-checkbox"
-                type="checkbox"
-                id="check"
-                name="check"
-              /><svg class="backdrop__check-svg" width="11" height="8">
+              <input class="backdrop__form-checkbox" type="checkbox" id="check" name="check" /><svg class="backdrop__check-svg" width="11" height="8">
                 <use href="./images/icons/sprite-modal.svg#check-icon"></use>
               </svg>
               <label for="check" class="backdrop__form-checkbox-label"

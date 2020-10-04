@@ -1,65 +1,24 @@
 .hero {
-  display: block;
-  width: 100%;
+  @include container(flex, center, center);
+  flex-direction: column;
   height: 400px;
 
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background-image: url(../images/mobile/studio/hero-mobile@1x.png);
-  background-image: -webkit-image-set(
-    url("../images/mobile/studio/hero-mobile@2x.png") 2x,
-    url("../images/mobile/studio/hero-mobile@3x.png") 3x
-  );
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/studio/hero-mobile@1x.png);
+  background-image: -webkit-image-set(linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/studio/hero-mobile@2x.png") 2x, linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/studio/hero-mobile@3x.png") 3x);
 
   @include for-size("tablet") {
-    background-image: url(../images/tablet/studio/hero-tablet@1x.png);
-    background-image: -webkit-image-set(
-      url("../images/tablet/studio/hero-tablet@2x.png") 2x,
-      url("../images/tablet/studio/hero-tablet@3x.png") 3x
-    );
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/studio/hero-tablet@1x.png);
+    background-image: -webkit-image-set(linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/studio/hero-tablet@2x.png") 2x, linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/studio/hero-tablet@3x.png") 3x);
   }
 
   @include for-size("desktop") {
     height: 600px;
-    background-image: url(../images/desktop/studio/hero-desktop@1x.png);
-    background-image: -webkit-image-set(
-      url("../images/desktop/studio/hero-desktop@2x.png") 2x,
-      url("../images/desktop/studio/hero-desktop@3x.png") 3x
-    );
-  }
-
-  &__overlay {
-    width: 100%;
-    height: 400px;
-
-    background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    );
-
-    @include for-size(desktop) {
-      height: 600px;
-    }
-  }
-
-  &__list {
-    display: block;
-    margin: 0 auto;
-    padding-top: 118px;
-
-    list-style: none;
-
-    @include for-size(mobile-only) {
-      padding-top: 130px;
-    }
-    @include for-size(desktop) {
-      padding-top: 200px;
-    }
-  }
-
-  &__item {
-    display: block;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/studio/hero-desktop@1x.png);
+    background-image: -webkit-image-set(linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/studio/hero-desktop@2x.png") 2x, linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/studio/hero-desktop@3x.png") 3x);
   }
 
   &__header {

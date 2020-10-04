@@ -38,7 +38,7 @@
 
     border: none;
     background-color: transparent;
-    opacity: 0;
+    display: none;
 
     & .menu__icon-cross {
       display: none;
@@ -53,7 +53,7 @@
     }
 
     @include for-size(mobile-plus) {
-      opacity: 1;
+      display: block;
     }
   }
 }
