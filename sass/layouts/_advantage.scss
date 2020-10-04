@@ -4,17 +4,20 @@
   }
 
   &__list {
-    list-style: none;
     @include container(flex, center, center);
     flex-wrap: wrap;
+
+    list-style: none;
   }
 
   &__item {
-    margin-bottom: 30px;
     width: 100%;
+    margin-bottom: 30px;
+
     &:last-child {
       margin-bottom: 0;
     }
+
     @include for-size(tablet) {
       width: calc((100% - 30px * 1) / 2);
       margin-right: 30px;
@@ -27,6 +30,7 @@
         margin-bottom: 0;
       }
     }
+
     @include for-size(desktop) {
       width: calc((100% - 30px * 3) / 4);
       margin-right: 30px;
@@ -43,17 +47,21 @@
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
+
     background-color: $white-button;
 
     @include for-size(mobile-only) {
       width: 100%;
     }
+
     @include for-size(mobile) {
       width: 450px;
     }
+
     @include for-size(tablet) {
       width: 354px;
     }
+
     @include for-size(desktop) {
       width: 270px;
     }

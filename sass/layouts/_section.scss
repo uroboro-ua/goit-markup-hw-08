@@ -1,6 +1,7 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
   @include for-size(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -8,10 +9,11 @@
 
   &__header {
     display: block;
+    padding-bottom: 30px;
+
+    @include font("Roboto", 28px, normal, 700, 33px, 0.03em);
     color: $black-heading;
     text-align: center;
-    padding-bottom: 30px;
-    @include font("Roboto", 28px, normal, 700, 33px, 0.03em);
 
     @include for-size(desktop) {
       padding-bottom: 50px;

@@ -4,6 +4,7 @@ body {
   color: $grey-text;
   overflow-x: hidden;
 }
+
 h1,
 h2,
 h3,
@@ -13,9 +14,11 @@ b {
   margin: 0;
   padding: 0;
 }
+
 input {
   outline: none;
 }
+
 textarea {
   resize: none;
   outline: none;
@@ -30,12 +33,15 @@ textarea {
   @include for-size(mobile-only) {
     width: 320px;
   }
+
   @include for-size(mobile) {
     width: 480px;
   }
+
   @include for-size(tablet) {
     width: 768px;
   }
+
   @include for-size(desktop) {
     width: 1200px;
   }

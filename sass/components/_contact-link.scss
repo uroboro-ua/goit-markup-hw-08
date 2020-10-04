@@ -1,14 +1,14 @@
 .contact__link {
-  text-decoration: none;
   @include container(flex, center, center);
+  text-decoration: none;
 
   @include for-size(tablet) {
     @include font("Roboto", 12px, normal, 500, 14px, 0.02em);
   }
 
   @include for-size(desktop) {
-    @include font("Roboto", 14px, normal, 500, 16px, 0.02em);
     @include container(flex, flex-start, flex-start);
+    @include font("Roboto", 14px, normal, 500, 16px, 0.02em);
   }
 
   &:hover {

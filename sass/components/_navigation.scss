@@ -1,7 +1,8 @@
 .menu {
   display: flex;
-  background-color: white;
   width: 100%;
+
+  background-color: white;
 
   @include for-size(mobile-plus) {
     display: none;
@@ -11,6 +12,7 @@
     height: 453px;
     padding-bottom: 60px;
     padding-top: 60px;
+
     z-index: 5;
     transition: 1s linear;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -21,6 +23,7 @@
       flex-direction: column;
     }
   }
+
   &__icons {
     width: 20px;
     height: 20px;
@@ -29,10 +32,12 @@
       fill: $blue-link;
     }
   }
+
   &__button {
     @include container(flex, center, center);
     width: 40px;
     height: 40px;
+
     border: none;
     background-color: transparent;
     opacity: 0;
@@ -40,12 +45,15 @@
     & .menu__icon-cross {
       display: none;
     }
+
     &.is-open .menu__icon-cross {
       display: block;
     }
+
     &.is-open .menu__icon-menu {
       display: none;
     }
+
     @include for-size(mobile-plus) {
       opacity: 1;
     }

@@ -1,10 +1,12 @@
 .button {
   @include container(flex, center, center);
   margin: 0 auto;
+
   border-radius: 4px;
   border-style: none;
   background-color: $blue-link;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   @include font("Roboto", 16px, normal, 700, 30px, 0.06em);
   color: $white;
   text-align: center;
