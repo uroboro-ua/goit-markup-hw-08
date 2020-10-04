@@ -46,7 +46,7 @@
       @include container(flex, flex-start, center);
       flex-direction: row;
       margin-bottom: 0;
-      margin-right: 259px;
+      margin-right: 299px;
     }
   }
 
@@ -170,7 +170,11 @@
     }
 
     @include for-size(desktop) {
-      margin-left: 40px;
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 
