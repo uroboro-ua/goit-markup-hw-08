@@ -50,15 +50,6 @@
   &__image {
     width: 100%;
     height: auto;
-    @include for-size(mobile) {
-      height: 460px;
-    }
-    @include for-size(tablet) {
-      height: 374px;
-    }
-    @include for-size(desktop) {
-      height: 260px;
-    }
   }
   &__fullname {
     margin-top: 30px;

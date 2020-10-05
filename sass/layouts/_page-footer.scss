@@ -1,130 +1,72 @@
-.page-footer {
-  flex-direction: column;
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: $black-section;
-  color: var(--white-text-color);
 
-  &__list {
-    @include container(flex, center, center);
-    flex-wrap: wrap;
+  @media screen and (max-width: 1279px) {
+    text-align: center;
+  }
 
-    list-style: none;
+  @include for-size(tablet) {
+    display: flex;
+  }
 
+  &__container {
+    @include for-size(tablet) {
+      @include container(flex, space-between, center);
+      flex-wrap: wrap;
+    }
+
+    @include for-size(desktop) {
+      @include container(flex, space-between, flex-start);
+    }
+  }
+
+  &__widget:not(:last-child) {
+    margin-bottom: 60px;
+
+    @include for-size(tablet) {
+      width: 50%;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 0;
+      width: calc((50% - 45px) / 2);
+    }
+  }
+
+  &__widget:last-child {
+    width: 100%;
+
+    @include for-size(desktop) {
+      width: calc(50% - 15px);
+    }
+  }
+
+  .position {
     @include for-size(desktop) {
       @include container(flex, flex-start, center);
     }
   }
 
-  &__item {
-    margin-bottom: 60px;
-
-    @include for-size(mobile) {
-      width: 100%;
-      margin-left: auto;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    @include for-size(tablet) {
-      margin-right: 165px;
-
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
-
-      &:nth-child(n + 3) {
-        margin: 0 auto;
-      }
-    }
-
-    @include for-size(desktop) {
-      margin-bottom: 0;
-    }
-  }
-
-  &__address-container {
-    @include container(flex, center, center);
-    flex-direction: column;
-
-    @include for-size(desktop) {
-      @include container(flex, flex-start, flex-start);
-      margin-right: 70px;
-    }
-  }
-
-  &__address-section {
-    width: 231px;
-    margin-top: 20px;
-
-    list-style: none;
-
-    @include for-size(mobile-only) {
-      width: 100%;
-    }
-  }
-
-  &__address-item,
-  .contact__link {
-    padding-bottom: 9px;
-
-    @include for-size(tablet) {
-      @include font("Roboto", 14px, normal, 500, 16px, 0.02em);
-    }
-
-    &:last-child {
-      padding-bottom: 0;
-    }
-  }
-
-  &__mail-link,
-  &__phone-link {
-    color: $white-link;
-    text-decoration: none;
-  }
-
-  &__address {
-    @include font("Roboto", 14px, normal, 400, 24px, 0.03em);
-    color: $white;
-    text-align: center;
-
-    @include for-size(desktop) {
-      text-align: left;
-    }
-  }
-
-  &__social-container {
-    @include container(flex, center, center);
-    flex-direction: column;
-
-    @include for-size(tablet) {
-      margin-top: 10px;
-    }
-
-    @include for-size(desktop) {
-      @include container(flex, flex-start, flex-start);
-      margin-right: 93px;
-    }
-  }
-
-  &__social-heading {
-    margin-bottom: 20px;
-
+  &__title {
     @include font("Roboto", 14px, normal, 700, 16px, 0.03em);
     color: $white;
     text-transform: uppercase;
+    margin-top: 0px;
+    @include for-size(desktop) {
+      margin-top: 10px;
+    }
   }
 
-  &__subscribe-container {
-    @include container(flex, center, center);
-    flex-direction: column;
+  .address {
+    margin-top: 20px;
+    @include font("Roboto", 14px, normal, 400, 24px, 0.03em);
+    color: $white;
 
-    @include for-size(desktop) {
-      @include container(flex, flex-start, flex-start);
-      margin-top: 10px;
+    &__item {
+      margin-bottom: 9px;
     }
   }
 }

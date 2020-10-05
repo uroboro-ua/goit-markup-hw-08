@@ -6,10 +6,9 @@
 
   &__item {
     margin-right: 10px;
-    border-radius: 50%;
 
-    &:nth-child(4n) {
-      margin-right: 0;
+    &:not(:last-child) {
+      margin-right: 10px;
     }
 
     &:hover {
@@ -24,7 +23,7 @@
   }
 
   &__link {
-    @include container(inline-flex, center, center);
+    @include container(flex, center, center);
     width: 44px;
     height: 44px;
 
