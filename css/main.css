@@ -368,8 +368,8 @@ img {
   margin-right: 10px;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 10px;
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .social__item:hover {
