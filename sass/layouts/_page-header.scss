@@ -159,7 +159,7 @@
     @include for-size(mobile-plus) {
       &:not(:last-child) {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 16px;
       }
     }
 

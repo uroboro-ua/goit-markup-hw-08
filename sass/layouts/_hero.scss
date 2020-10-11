@@ -32,14 +32,10 @@
   &__header {
     margin-bottom: 30px;
 
-    @include font("Roboto", 16px, normal, 900, 30px, 0.06em);
+    @include font("Roboto", 26px, normal, 900, 42px, 0.06em);
     color: $white;
     text-align: center;
     text-transform: uppercase;
-
-    @include for-size(tablet) {
-      @include font("Roboto", 26px, normal, 900, 42px, 0.06em);
-    }
 
     @include for-size(desktop) {
       @include font("Roboto", 44px, normal, 900, 60px, 0.06em);

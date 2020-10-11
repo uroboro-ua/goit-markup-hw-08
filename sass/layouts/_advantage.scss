@@ -62,6 +62,9 @@
     @include font("Roboto", 14px, normal, 700, 16px, 0.03em);
     color: $black-heading;
     text-transform: uppercase;
+    @include for-size(mobile-plus) {
+      text-align: center;
+    }
   }
 
   &__description {
