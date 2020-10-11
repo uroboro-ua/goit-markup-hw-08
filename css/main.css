@@ -1459,6 +1459,12 @@ img {
   padding: 10px 31px;
 }
 
+@media (min-width: 120px) and (max-width: 767px) {
+  .hero__order {
+    padding: 5px 10px;
+  }
+}
+
 .hero__order:hover, .hero__order:focus {
   background-color: #188ce8;
 }
